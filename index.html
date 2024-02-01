@@ -23,27 +23,27 @@
     </div>
     <section id="main_content">
 
-        <div class="ventanaemergente3" style="display: none;">
+        <div class="ventanaemergente3 animate__animated animate__bounceInDown" style="display: none;">
             <div class="zonaArriba">
                 <div class="iz3">
-                    <i class="bi bi-lock"></i>
+                    <i class="bi bi-lock animate__animated animate__fadeInRight"></i>
                     <p>unlock system ready</p>
                 </div>
                 <p>system ready to be unlocked</p>
             </div>
             <div class="zonaAbajo" style="background-color: rgba(0, 0, 0, 0.685);">
-                <div class="primerInput" id="primerInput">
+                <div class="primerInput animate__animated animate__swing" id="primerInput">
                     <i class="bi bi-person-square"></i>
-                    <input type="text">
+                    <input id="quegracioso" placeholder="username..." type="text">
                 </div>
-                <div class="primerInput" id="segundoInput">
+                <div class="primerInput animate__animated animate__swing" id="segundoInput">
                     <i class="bi bi-lock"></i>
-                    <input type="text">
+                    <input  id="quegracioso2" placeholder="password..." type="password">
                 </div>
 
                 <p class="aviso shakeX" style="display: none;">incorrect username or password<br>please try again</p>
                 
-                <button onclick="comprobarFormulario()">
+                <button class="animate__animated animate__rubberBand" onclick="comprobarFormulario()">
                     <i class="bi bi-box-arrow-in-right"></i>
                     enter
                 </button>
