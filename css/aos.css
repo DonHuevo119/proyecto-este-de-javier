@@ -104,6 +104,7 @@ body {
   bottom: -18em;
   right: -44.5em;
   z-index: 5;
+  transition: background-color 3s ease;
 }
 
 .lock {

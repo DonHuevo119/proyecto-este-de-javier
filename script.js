@@ -1,8 +1,14 @@
 let contador = 0
 
 function comprobar() {
-    contador++
-    error()
+    let nombre = document.querySelector('.form-control-sm').value
+    let contraseña = document.querySelector('.passwordInput').value
+    if (contraseña === "admin" && nombre === "admin") {
+        transicion()
+    } else {
+        contador++
+        error()
+    }
 }
 
 function error() {
@@ -23,6 +29,13 @@ function error() {
         document.querySelector('.signin').style.cursor = "alias"
         document.querySelector('.lock').style.visibility = "visible"
         document.querySelector('.ventanaemergente2').style.display = "flex"
+
+        document.querySelector('.form-control-sm').style.pointerEvents = "none";
+        document.querySelector('.input-group-text').style.pointerEvents = "none";
+        document.querySelector('.passwordInput').style.pointerEvents = "none";
+        document.querySelector('.passwordLabel').style.pointerEvents = "none";
+        document.querySelector('.passwordInput').style.userSelect = "none";
+        document.querySelector('.form-control-sm').style.userSelect = "none";
     }
 }
 
@@ -48,17 +61,30 @@ function comprobarFormulario() {
         document.querySelector('.ar').style.display = "block"
         document.getElementById("quegracioso").value = ""
         document.getElementById("quegracioso2").value = ""
+
+        document.querySelector('.form-control-sm').style.pointerEvents = "auto";
+        document.querySelector('.input-group-text').style.pointerEvents = "auto";
+        document.querySelector('.passwordInput').style.pointerEvents = "auto";
+        document.querySelector('.passwordLabel').style.pointerEvents = "auto";
+        document.querySelector('.passwordInput').style.userSelect = "auto";
+        document.querySelector('.form-control-sm').style.userSelect = "auto";
         contador = 0
     } else {
         var avisoElement = document.querySelector('.aviso');
         avisoElement.style.display = "block";
-
-        // Añadir la clase shakeX después de mostrar el elemento
         avisoElement.classList.add('shakeX');
-
-        // Eliminar la clase shakeX después de la animación
         setTimeout(function () {
             avisoElement.classList.remove('shakeX');
-        }, 500); // Tiempo igual a la duración de la animación
+        }, 500);
     }
+}
+
+function transicion() {
+    var alaverga = document.querySelector('.alaverga');
+    alaverga.style.backgroundColor = "rgba(0, 0, 0, 0)"
+    alaverga.style.display = "flex";
+    setTimeout(function() {
+        alaverga.style.backgroundColor = "black";
+        alaverga.removeAttribute('onclick');
+    }, 100); // Añadir un retraso de 100ms antes de cambiar el color para permitir la transición
 }
