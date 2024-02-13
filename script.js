@@ -1,14 +1,9 @@
 let contador = 0
 
 function comprobar() {
-    let nombre = document.querySelector('.form-control-sm').value
-    let contraseña = document.querySelector('.passwordInput').value
-    if (contraseña === "admin" && nombre === "admin") {
-        transicion()
-    } else {
-        contador++
-        error()
-    }
+    contador++
+    error()
+
 }
 
 function error() {
@@ -69,6 +64,7 @@ function comprobarFormulario() {
         document.querySelector('.passwordInput').style.userSelect = "auto";
         document.querySelector('.form-control-sm').style.userSelect = "auto";
         contador = 0
+        transicion()
     } else {
         var avisoElement = document.querySelector('.aviso');
         avisoElement.style.display = "block";
@@ -81,10 +77,17 @@ function comprobarFormulario() {
 
 function transicion() {
     var alaverga = document.querySelector('.alaverga');
-    alaverga.style.backgroundColor = "rgba(0, 0, 0, 0)"
+    alaverga.style.backgroundColor = "rgba(0, 0, 0, 0)";
     alaverga.style.display = "flex";
-    setTimeout(function() {
+
+    // Añadir un retraso de 100ms antes de cambiar el color para permitir la transición
+    setTimeout(function () {
         alaverga.style.backgroundColor = "black";
         alaverga.removeAttribute('onclick');
-    }, 100); // Añadir un retraso de 100ms antes de cambiar el color para permitir la transición
+
+        // Tiempo adicional para la animación (3 segundos)
+        setTimeout(function () {
+            location.href = "index2.html";
+        }, 3000); // 3000 ms = 3 segundos
+    }, 100);
 }
