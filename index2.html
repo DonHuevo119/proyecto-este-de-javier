@@ -16,17 +16,19 @@
 </head>
 
 <body>
-    <div class="contenedorPadre animate__animated animate__fadeIn" style="width: 100%; height: 100%;">
+    <div class="contenedorPadre animate__animated animate__fadeIn"
+        style="width: 100%; height: 100%; display: flex; flex-wrap: wrap;">
         <div class="contenedor1 col-2">
             <div class="logo animate__animated animate__bounceInDown" style="display: flex; align-self:  center;">
-                <img src="img/logo-white.png" alt="logo" style="height: 50%; width: 110%; margin: 1em;">
+                <img src="img/logo-white.png" alt="logo" style="height: 50%; width: 110%; margin: 1em; cursor: pointer;"
+                    onclick="volver()">
             </div>
             <i class="bi bi-sign-intersection-t-fill" style="color: white; margin-left: 2em; margin-bottom: 0;"></i>
             <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 2%;">
 
-            <div class="direccion">
-                <strong>Sra. Ramírez,<br> Ramona</strong>
-                <p>49 años</p>
+            <div class="direccion" style="text-align: start;">
+                <strong style="margin-left: 1em;">Sra. Ramírez,<br> Ramona</strong>
+                <p style="margin-left: 1em;">49 años</p>
             </div>
 
             <div class="formulario">
@@ -35,31 +37,31 @@
             </div>
 
             <div class="contenedorDeOpciones">
-                <div class="item1">
+                <div class="item1" style="cursor: pointer;">
                     <i class="bi bi-calendar-heart"></i>
                     <p>An item</p>
 
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
-                <div class="item2">
+                <div class="item2" style="cursor: pointer;">
                     <i class="bi bi-file-earmark-medical-fill"></i>
                     <p>An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
-                <div class="item3">
+                <div class="item3" style="cursor: pointer;">
                     <i class="bi bi-hospital bi-3x"></i>
                     <p>An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
-                <div class="item4">
+                <div class="item4" style="cursor: pointer;">
                     <i class="bi bi-lungs"></i>
                     <p>An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
-                <div class="item5">
+                <div class="item5" style="cursor: pointer;">
                     <i class="bi bi-send"></i>
                     <p>An item</p>
                 </div>
@@ -67,17 +69,109 @@
 
         </div>
         <div class="contenedor2 col-3">
-            <i class="bi bi-menu-button-wide" style="color: white;"></i>
-
+            <div class="iconosTop">
+                <i class="bi bi-menu-button-wide" style="color: white;"></i>
+                <div class="dere">
+                    <i class="bi bi-envelope-fill" style="color: white;"></i>
+                    <i class="bi bi-bell-fill" style="color: white;"></i>
+                </div>
+            </div>
+            <h4 style="color: white; text-align: start; margin-left: 0.5em; margin-bottom: 0.5em; font-size: 1.8em;">
+                Lorem ipsum dolor sit
+                amet consectetur adipisicing elit</h4>
+            <div class="contenedorBlanco1">
+                <div class="fila1">
+                    <i class="bi bi-heart-fill" style="color: red; font-size: 2em;"></i>
+                    <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
+                </div>
+                <div style="text-align: start; margin: 1em;">
+                    <p>último dato:</p>
+                    <p><strong>Martes, 26 de Noviembre 2023</strong> / hace 132 días</p>
+                </div>
+                <div class="cajas" style="display: flex; flex-direction: row;">
+                    <div class="cajaIz">
+                        <strong style="margin-right: 0.2em;">120</strong>
+                        <div class="a">
+                            <p style="margin-right: 0.2em;">mm</p>
+                            <p style="margin-right: 0.2em;">hg</p>
+                        </div>
+                    </div>
+                    <div class="cajaDe">
+                        <strong style="margin-right: 0.1em;">80</strong>
+                        <p>mm Hg</p>
+                    </div>
+                </div>
+                <div class="inputUno">
+                    <input class="inputUno1" type="text">
+                </div>
+                <select class="desplegable" name="lenguajes" id="lang">
+                    <option value="javascript">notas</option>
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                    <option value="golang">Golang</option>
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                    <option value="C++">C++</option>
+                    <option value="erlang">Erlang</option>
+                </select>
+                <div class="inputUno">
+                    <input class="inputUno1" type="text">
+                </div>
+                <div class="inputDos">
+                    <input class="inputDos2" type="text">
+                </div>
+            </div>
         </div>
         <div class="contenedor3 col-3">
-            <p>a</p>
+            <div class="iconosTop">
+                <i class="bi bi-menu-button-wide" style="color: white;"></i>
+                <div class="dere">
+                    <i class="bi bi-envelope-fill" style="color: white;"></i>
+                    <i class="bi bi-bell-fill" style="color: white;"></i>
+                </div>
+            </div>
+            <h4 style="color: white; text-align: start; margin-left: 0.5em; margin-bottom: 0.5em; font-size: 1.8em;">
+                consectetur idipisicing elit</h4>
+
+            <div class="contenedorBlanco1">
+                <div class="fila1">
+                    <i class="bi-droplet-fill" style="color: red; font-size: 2em; margin-top: 0.5em;"></i>
+                    <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
+                </div>
+                <div class="texto1 d-flex flex-row" style="justify-content: space-between; margin: 1em;">
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                </div>
+                <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
+
+            </div>
         </div>
         <div class="contenedor4 col-3">
-            <p>a</p>
+            <div class="iconosTop">
+                <i class="bi bi-menu-button-wide" style="color: white;"></i>
+                <div class="dere">
+                    <i class="bi bi-envelope-fill" style="color: white;"></i>
+                    <i class="bi bi-bell-fill" style="color: white;"></i>
+                </div>
+            </div>
+            <h4 style="color: white; text-align: start; margin-left: 0.5em; margin-bottom: 0.5em; font-size: 1.8em;">
+                consectetur idipisicing elit</h4>
+
+            <div class="contenedorBlanco1">
+                <div class="fila1">
+                    <i class="bi-droplet-fill" style="color: red; font-size: 2em; margin-top: 0.5em;"></i>
+                    <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
+                </div>
+                <div class="texto1 d-flex flex-row" style="justify-content: space-between; margin: 1em;">
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong>Lorem ipsum dolor, sit amet</strong>
+                </div>
+                <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
+            </div>
         </div>
     </div>
-
 
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/bideo.js"></script>

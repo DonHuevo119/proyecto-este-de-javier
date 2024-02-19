@@ -91,3 +91,7 @@ function transicion() {
         }, 3000); // 3000 ms = 3 segundos
     }, 100);
 }
+
+function volver(){
+    location.href = "index.html";
+}

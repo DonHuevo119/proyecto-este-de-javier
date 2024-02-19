@@ -24,21 +24,20 @@ body {
     margin: 1em;
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
 .contenedor3 {
     background: linear-gradient(166deg, rgb(0, 62, 70) 5%, rgb(56, 171, 170) 100%);
     border-radius: 1em;
     margin: 1em;
-    height: 30%;
+    height: 21%;
 }
 
 .contenedor4 {
     background: linear-gradient(166deg, rgb(0, 62, 70) 5%, rgb(56, 171, 170) 100%);
     border-radius: 1em;
     margin: 1em;
-    height: 30%;
+    height: 21%;
 }
 
 .direccion {
@@ -67,7 +66,6 @@ body {
 .contenedorDeOpciones {
     display: flex;
     flex-direction: column;
-
     align-self: center;
     background-color: white;
     align-content: center;
@@ -83,7 +81,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     justify-content: center;
     padding: 0;
 }
@@ -93,7 +90,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .item3 {
@@ -101,7 +97,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .item4 {
@@ -109,7 +104,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .item5 {
@@ -117,10 +111,145 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
 
+.item1:hover {
+    color: rgb(158, 158, 158);
+}
+
+.item2:hover {
+    color: rgb(158, 158, 158);
+}
+
+.item3:hover {
+    color: rgb(158, 158, 158);
+}
+
+.item4:hover {
+    color: rgb(158, 158, 158);
+}
+
+.item5:hover {
+    color: rgb(158, 158, 158);
 }
 
 .contenedorDeOpciones i {
     margin-right: 0.4em;
     font-size: 2em;
+}
+
+.iconosTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+
+.iconosTop .bi {
+    font-size: 1.7em;
+}
+
+.bi-envelope-fill {
+    margin-right: 1em;
+}
+
+.contenedorBlanco1 {
+    border-radius: 1em;
+    background-color: white;
+    height: 100%;
+}
+
+.fila1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+    align-items: center;
+}
+
+h4 {
+    height: 2.5em;
+    font-size: 1.6em !important;
+    width: 80%;
+}
+
+.texto1 strong {
+    width: 6.5em;
+    text-align: start;
+}
+
+.cajas {
+    justify-content: space-around;
+}
+
+.cajaIz {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(166deg, rgb(0, 62, 70) 5%, rgb(56, 171, 170) 100%);
+    border-radius: 1em;
+    border: none;
+    color: white;
+    width: 40%;
+    height: 6em;
+}
+
+.cajaDe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(166deg, rgb(0, 62, 70) 5%, rgb(56, 171, 170) 100%);
+    border-radius: 1em;
+    border: none;
+    color: white;
+    width: 40%;
+}
+
+.cajas strong {
+    font-size: 3em;
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.cajaDe p {
+    margin-top: 1em;
+}
+
+.inputUno {
+    display: flex;
+    justify-content: end;
+    margin: 1.5em;
+}
+
+.inputUno1 {
+    border: 0.15em solid rgb(112, 179, 255);
+    border-radius: 0.5em;
+    width: 20%;
+    height: 3em;
+}
+
+.desplegable {
+    border: 0.15em solid rgb(107, 107, 107);
+    margin: 1em;
+    border-radius: 0.8em;
+    width: 90%;
+    height: 3.5em;
+}
+
+.inputDos {
+    display: flex;
+    justify-content: end;
+    margin: 1.5em;
+}
+
+.inputDos2 {
+    border: 0.15em solid rgb(107, 107, 107);
+    width: 100%;
+    height: 30em;
 }
