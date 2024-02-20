@@ -9,13 +9,12 @@ body {
 }
 
 .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(166deg, rgb(0, 62, 70) 5%, rgb(56, 171, 170) 100%);
     border-radius: 1em;
     margin: 1em;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
 }
 
 .contenedor2 {
@@ -73,7 +72,7 @@ body {
     width: 80%;
     margin-top: 2em;
     border-radius: 1em;
-    height: 50%;
+    height: 35%;
     margin-bottom: 3em;
 }
 
@@ -83,6 +82,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 .item2 {

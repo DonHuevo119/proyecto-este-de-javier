@@ -87,7 +87,7 @@ function transicion() {
 
         // Tiempo adicional para la animación (3 segundos)
         setTimeout(function () {
-            location.href = "index2.html";
+            location.href = "dashboard.html";
         }, 3000); // 3000 ms = 3 segundos
     }, 100);
 }
