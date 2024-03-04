@@ -92,6 +92,22 @@ function transicion() {
     }, 100);
 }
 
-function volver(){
-    location.href = "index.html";
+let contadorJeje = 0;
+let c = document.querySelectorAll('.c')
+
+
+function cambiarTema() {
+    contadorJeje++;
+    const body = document.querySelector('body');
+    if (contadorJeje % 2 === 0) {
+        body.setAttribute('data-bs-theme', 'dark');
+        c.forEach(element => {
+            element.style.border = "0.15em solid white"
+        });
+    } else {
+        body.setAttribute('data-bs-theme', 'light');
+        c.forEach(element => {
+            element.style.border = "0.15em solid black"
+        });
+    }
 }

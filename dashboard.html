@@ -15,78 +15,81 @@
     <title>Metagenetics</title>
 </head>
 
-<body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+<body data-bs-theme="dark">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color: rgb(0, 15, 11) !important;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
             </svg>
-                <img class="w-50" src="img/logo-white.png" alt="logo" style="cursor: pointer;"
-                    onclick="volver()">
+            <img class="w-50" src="img/logo-white.png" alt="logo" style="cursor: pointer;" onclick="volver()">
         </a>
 
-        <ul class="nav nav-pills d-flex align-items-center">
+        <ul class="nav nav-pills d-flex align-items-center" style="margin-right: 5em;">
             <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
             <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <div class="form-check form-switch d-flex align-items-center">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              </div>
+                <label class="switch">
+                    <input class="cb" type="checkbox" />
+                    <span class="toggle">
+                        <span class="left" onclick="cambiarTema()"><i class="bi bi-moon-fill"></i></span>
+                        <span class="right" onclick="cambiarTema()"><i class="bi bi-brightness-high-fill"></i></span>
+                    </span>
+                </label>
+            
         </ul>
     </header>
     <div class="contenedorPadre animate__animated animate__fadeIn"
         style="width: 100%; height: 100%; display: flex; flex-wrap: wrap;">
-        <div class="contenedor1 col-2">
+        <div class="contenedor1 col-2 c">
             <div class="logo animate__animated animate__bounceInDown" style="display: flex; align-self:  center;">
-                <img src="img/logo-white.png" alt="logo" style="height: 50%; width: 110%; margin: 1em; cursor: pointer;"
-                    onclick="volver()">
+                <a href="index.html"><img src="img/logo-white.png" alt="logo" style="height: 50%; width: 105%; margin: 1em; cursor: pointer;"></a>
             </div>
             <img src="img/home-consultas-dermatologica-1615566637.jpg" alt=""
                 style="height: 20%; width: 80%; border-radius: 2em;">
             <div class="direccion sombra" style="text-align: start;">
-                <strong style="margin-left: 1em;">Sra. Ramírez,<br> Ramona</strong>
-                <p style="margin-left: 1em;">49 años</p>
+                <strong class="n" style="margin-left: 1em;">Sra. Ramírez,<br> Ramona</strong>
+                <p class="n" style="margin-left: 1em;">49 años</p>
             </div>
 
             <div class="formulario sombra">
                 <!-- <i class="bi bi-sign-intersection-t-fill"
                     style="color: rgb(163, 163, 163); margin-left: 1em; margin-bottom: 0;"></i> -->
-                    <img class="img-fluid p-3" src="img/fiatc-seguros-reduc-removebg-preview.png" alt="">
+                <img class="img-fluid p-3" src="img/fiatc-seguros-reduc-removebg-preview.png" alt="">
             </div>
 
             <div class="contenedorDeOpciones sombra">
                 <div class="item1" style="cursor: pointer;">
-                    <i class="bi bi-calendar-heart"></i>
-                    <p>An item</p>
+                    <i class="n bi bi-calendar-heart"></i>
+                    <p class="n">An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
                 <div class="item2" style="cursor: pointer;">
-                    <i class="bi bi-file-earmark-medical-fill"></i>
-                    <p>An item</p>
+                    <i class="n bi bi-file-earmark-medical-fill"></i>
+                    <p class="n">An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
                 <div class="item3" style="cursor: pointer;">
-                    <i class="bi bi-hospital bi-3x"></i>
-                    <p>An item</p>
+                    <i class="n bi bi-hospital bi-3x"></i>
+                    <p class="n">An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
                 <div class="item4" style="cursor: pointer;">
-                    <i class="bi bi-lungs"></i>
-                    <p>An item</p>
+                    <i class="n bi bi-lungs"></i>
+                    <p class="n">An item</p>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
                 <div class="item5" style="cursor: pointer;">
-                    <i class="bi bi-send"></i>
-                    <p>An item</p>
+                    <i class="n bi bi-send"></i>
+                    <p class="n">An item</p>
                 </div>
             </div>
 
         </div>
-        <div class="contenedor2 col-3">
+        <div class="contenedor2 col-3 c">
             <div class="iconosTop">
                 <i class="bi bi-menu-button-wide" style="color: white;"></i>
                 <div class="dere">
@@ -103,8 +106,8 @@
                     <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
                 </div>
                 <div style="text-align: start; margin: 1em;">
-                    <p>último dato:</p>
-                    <p><strong>Martes, 26 de Noviembre 2023</strong> / hace 132 días</p>
+                    <p class="n">último dato:</p>
+                    <p class="n"><strong>Martes, 26 de Noviembre 2023</strong> / hace 132 días</p>
                 </div>
                 <div class="cajas" style="display: flex; flex-direction: row;">
                     <div class="cajaIz">
@@ -120,9 +123,9 @@
                     </div>
                 </div>
                 <div class="inputUno">
-                    <input class="inputUno1" type="text">
+                    <input class="b inputUno1" type="text">
                 </div>
-                <select class="desplegable" name="lenguajes" id="lang">
+                <select class="b desplegable" name="lenguajes" id="lang">
                     <option value="javascript">notas</option>
                     <option value="php">PHP</option>
                     <option value="java">Java</option>
@@ -133,10 +136,10 @@
                     <option value="erlang">Erlang</option>
                 </select>
                 <div class="inputUno">
-                    <input class="inputUno1" type="text">
+                    <input class="inputUno1 b" type="text">
                 </div>
                 <div class="inputDos">
-                    <input class="inputDos2" type="text">
+                    <input class="inputDos2 b" type="text">
                 </div>
             </div>
         </div>
@@ -151,15 +154,15 @@
             <h4 style="color: white; text-align: start; margin-left: 0.5em; margin-bottom: 0.5em; font-size: 1.8em;">
                 consectetur idipisicing elit</h4>
 
-            <div class="contenedorBlanco1">
+            <div class="contenedorBlanco1 c">
                 <div class="fila1">
                     <i class="bi-droplet-fill" style="color: red; font-size: 2em; margin-top: 0.5em;"></i>
                     <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
                 </div>
                 <div class="texto1 d-flex flex-row" style="justify-content: space-between; margin: 1em;">
-                    <strong>Lorem ipsum dolor, sit amet</strong>
-                    <strong>Lorem ipsum dolor, sit amet</strong>
-                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
 
@@ -176,15 +179,15 @@
             <h4 style="color: white; text-align: start; margin-left: 0.5em; margin-bottom: 0.5em; font-size: 1.8em;">
                 consectetur idipisicing elit</h4>
 
-            <div class="contenedorBlanco1">
+            <div class="contenedorBlanco1 c">
                 <div class="fila1">
                     <i class="bi-droplet-fill" style="color: red; font-size: 2em; margin-top: 0.5em;"></i>
                     <strong style="color: rgb(0, 93, 105);">lorem ipsum</strong>
                 </div>
                 <div class="texto1 d-flex flex-row" style="justify-content: space-between; margin: 1em;">
-                    <strong>Lorem ipsum dolor, sit amet</strong>
-                    <strong>Lorem ipsum dolor, sit amet</strong>
-                    <strong>Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
+                    <strong class="n">Lorem ipsum dolor, sit amet</strong>
                 </div>
                 <img src="img/Separador-texto-blog.png" alt="" style="width: 100%; height: 5%; margin-bottom: 1em;">
             </div>
